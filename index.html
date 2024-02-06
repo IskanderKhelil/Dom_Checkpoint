@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table class="table">
+      <th>Product</th>
+      <th>Name</th>
+      <th>Quantity</th>
+      <th>Price</th>
+      <th>TotalPrice</th>
+      <th class="action">Action</th>
+      <tr>
+        <td>
+          <img width="100px" src="assets\burger.jfif" alt="burger" />
+        </td>
+        <td>
+          <p>Burger event</p>
+        </td>
+        <td>
+          <div id="counter">
+            <div class="blue-botton" id="moins" onclick="Decrement('Value1')">
+              <span>-</span>
+            </div>
+            <span id="Value1"> 0 </span>
+            <div class="blue-botton" id="plus" onclick="Increment('Value1')">
+              <span>+</span>
+            </div>
+          </div>
+        </td>
+        <td><span id="price1">10</span> <span>€</span></td>
+        <td><span id="TotPrice1"> 0 </span> <span>€</span></td>
+        <td>
+          <div class="choice">
+            <button
+              id="add-bot"
+              onclick="calcul ('Value1', 'price1', 'TotPrice1')"
+            >
+              Add
+            </button>
+            <button class="cancel" onclick="cancel('TotPrice1','Value1')">
+              Cancel
+            </button>
+            <div class="wrapper">
+              <a id="unlike" href="#" onclick="like('emptyheart1','fullheart1')"
+                ><img
+                  width="35px"
+                  height="auto"
+                  src="assets\Heart_icon_red_hollow.svg.png"
+                  id="emptyheart1"
+                  style="display: block;"
+                  
+              /></a>
+              <a id="like" href="#" onclick="like('emptyheart1','fullheart1')"
+                ><img
+                  width="35px"
+                  height="auto"
+                  src="assets\redheart.png"
+                  id="fullheart1"
+                  style="display: none;"
+                  
+              /></a>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img width="100px" src="assets\pizza.webp" alt="burger" />
+        </td>
+        <td>
+          <p>Pizza time</p>
+        </td>
+        <td>
+          <div id="counter2">
+            <div class="blue-botton" id="moins2" onclick="Decrement('Value2')">
+              <span>-</span>
+            </div>
+            <span id="Value2"> 0 </span>
+            <div class="blue-botton" id="plus2" onclick="Increment('Value2')">
+              <span>+</span>
+            </div>
+          </div>
+        </td>
+        <td><span id="price2">15</span> <span>€</span></td>
+        <td><span id="TotPrice2"> 0 </span> <span>€</span></td>
+        <td>
+          <div class="choice">
+            <button
+              id="add-bot2"
+              onclick="calcul ('Value2', 'price2', 'TotPrice2')"
+            >
+              Add
+            </button>
+            <button class="cancel" onclick="cancel ('TotPrice2','Value2')">
+              Cancel
+            </button>
+            <div>
+              <a onclick="like('emptyheart2','fullheart2')"
+                ><img
+                  width="35px"
+                  height="auto"
+                  src="assets\Heart_icon_red_hollow.svg.png"
+                  id="emptyheart2"
+                  style="display: block;"
+              /></a>
+              <a onclick="like('emptyheart2','fullheart2')"
+                ><img
+                  width="35px"
+                  height="auto"
+                  src="assets\redheart.png"
+                  id="fullheart2"
+                  style="display: none;"
+                  
+              /></a>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>
+          <div class="totaldisplayed">
+            <span> <b>Total:</b></span> <span id="TotalAmount">0</span>
+            <span>€</span>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <script src="index.js"></script>
+  </body>
+</html>

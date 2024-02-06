@@ -1,0 +1,124 @@
+body {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.table {
+   
+    border-collapse: collapse;
+    width: 80%;
+    align-items:start;
+    text-align: left;
+    
+}
+
+.table th {
+ background-color: rgb(32, 30, 30);
+ color: #f0f8ff;
+ padding: 20px;
+
+
+}
+
+.table td {
+    padding: 20px;
+    border-bottom: 1pt solid rgb(219, 210, 210);
+   }
+
+   #counter {
+    display: flex;
+    align-items: center;
+    
+   }
+
+   #counter2 {
+    display: flex;
+    align-items: center;
+    
+   }
+
+   .blue-botton {
+    background-color: rgb(124, 159, 255);
+    color: #f0f8ff;
+    border-radius: 2px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+   }
+
+   #Value1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    
+   }
+
+   #Value2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    
+   }
+
+   #add-bot {
+    background-color: rgb(52, 167, 60);
+    color: #f0f8ff;
+    border-radius: 2px;
+    padding: 5px;
+    width: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .cancel{
+    background-color: red;
+    color: #f0f8ff;
+    border-radius: 2px;
+    padding: 5px;
+    width: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .choice{
+    display: flex;
+    justify-content: space-around;
+
+
+   }
+   .action{
+    text-align: center;
+   }
+   #add-bot2 {
+    background-color: rgb(52, 167, 60);
+    color: #f0f8ff;
+    border-radius: 2px;
+    padding: 5px;
+    width: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .totaldisplayed{
+    display: flex;
+  align-self: flex-end;
+   }
+
+   /* .heart {
+    color: red;
+    background-color: currentColor;
+    display: inline-block;
+    height: 5px;
+    margin: 10px;
+  } */
