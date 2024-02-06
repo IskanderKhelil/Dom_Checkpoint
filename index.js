@@ -43,13 +43,33 @@ function calcul (QuantityId, PriceId, TotPriceId){
  totality.innerHTML= Number(totality.innerHTML)+Number(totalprice.innerHTML);
 }
 
-function cancel(totalId,quantityId){
-  let totality= document.getElementById(totalId);
-  let quantity = document.getElementById(quantityId);
-  totality.innerHTML=0;
+function cancel (QuantityId, PriceId, TotPriceId){
+  
+  let totalprice=document.getElementById(TotPriceId)
+  let Price=document.getElementById(PriceId)
+  let quantity = document.getElementById(QuantityId);
+  let totality= document.getElementById("TotalAmount");
+  let cancelprice
+  cancelprice=totalprice.innerHTML
+  // totality.innerHTML=0;
   quantity.innerHTML=0;
-
+ 
+ totalprice.innerHTML=Number(Price.innerHTML)*Number(quantity.innerHTML);
+ totality.innerHTML= Number(totality.innerHTML)-cancelprice;
 }
+
+// function cancel(totalId,quantityId){
+//   let totalprice= document.getElementById(totalId);
+//   let quantity = document.getElementById(quantityId);
+//   let totality= document.getElementById("TotalAmount");
+  
+//   quantity.innerHTML=0;
+//   totalprice.innerHTML=Number(Price.innerHTML)*Number(quantity.innerHTML);
+//  totality.innerHTML= Number(totality.innerHTML)+Number(totalprice.innerHTML);
+  
+  
+
+// }
 
 // let like=getElementById("heart")
 // like.addEventListener()
